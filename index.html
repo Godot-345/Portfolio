@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nguyễn Trần Hải Nam - Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #0b1f44;
+      background-color: #d6e6fb;  
+    }
+    .container { width: 1000px; margin: 0 auto; }
+
+    .khoi {
+      background-color: #ffffff;
+      border: 1px solid #b6cdf7;
+      border-radius: 8px;
+      padding: 25px;
+      margin-bottom: 20px;
+    }
+    .khoi h3 { color: #1e40af; margin-bottom: 10px; }
+    .khoi p { margin-bottom: 10px; }
+
+    .hang {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .o2 { width: 49%; }   
+    .o4 { width: 24%; }   
+    .tieu-de { color: #1e3a8a; margin: 30px 0 15px 0; }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      background-color: #1e40af;
+      padding: 15px 40px;
+    }
+    .logo { color: #ffffff; font-weight: bold; font-size: 20px; }
+    nav a { color: #ffffff; text-decoration: none; margin-left: 25px; }
+    nav a:hover { color: #bfdbfe; }
+
+    .hero { text-align: center; margin-top: 30px; padding: 50px 25px; }
+    .hero h1 { font-size: 42px; color: #1e40af; }
+    .nut {
+      display: inline-block;
+      background-color: #2563eb;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 12px 25px;
+      border-radius: 5px;
+      margin: 10px 10px 0 10px;
+    }
+    .nut:hover { background-color: #1d4ed8; }
+
+    .gioi-thieu { display: flex; }
+    .anh {
+      width: 150px;
+      height: 200px;
+      flex: none;
+      margin-right: 20px;
+      padding: 4px;
+      border: 3px solid #2563eb;
+      border-radius: 8px;
+    }
+    .anh img { width: 100%; height: 100%; object-fit: cover; }
+
+    table { width: 100%; border-collapse: collapse; }
+    td { padding: 8px; border-bottom: 1px solid #dbe7fb; }
+    ul { margin-left: 20px; }
+    .the {
+      display: inline-block;
+      background-color: #e0ebfd;
+      color: #1e3a8a;
+      border-radius: 4px;
+      padding: 2px 10px;
+      font-size: 14px;
+      margin: 0 5px 5px 0;
+    }
+    .du-an:hover { background-color: #f2f7ff; }
+    .du-an a { margin-right: 15px; }
+    a { color: #1e40af; font-weight: bold; }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #b6cdf7;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    input[type="submit"] { background-color: #2563eb; color: #ffffff; cursor: pointer; }
+    input[type="submit"]:hover { background-color: #1d4ed8; }
+
+    footer { text-align: center; color: #1e3a8a; padding: 20px 0 30px 0; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <span class="logo">&lt;Hải Nam /&gt;</span>
+    <nav>
+      <a href="#about">Giới thiệu</a>
+      <a href="#skills">Kỹ năng</a>
+      <a href="#projects">Dự án</a>
+      <a href="#contact">Liên hệ</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="khoi hero">
+      <p>Xin chào, tôi là</p>
+      <h1>Nguyễn Trần Hải Nam</h1>
+      <p>Sinh viên Công nghệ Thông tin (K66 - Đại học Vinh) &amp; Digital Content Creator</p>
+      <a href="#projects" class="nut">Xem dự án</a>
+      <a href="#contact" class="nut">Liên hệ</a>
+    </section>
+
+    <h2 class="tieu-de" id="about">Về tôi</h2>
+    <section class="hang">
+      <article class="khoi o2">
+        <h3>Giới thiệu</h3>
+        <div class="gioi-thieu">
+          <!-- Thay src bằng ảnh của bạn, ví dụ ./imgs/chandung.jpg -->
+          <div class="anh">
+            <img src="chandung.jpg">
+          </div>
+          <div>
+            <p>Tôi là sinh viên năm thứ hai ngành Công nghệ Thông tin tại Viện Kỹ thuật &amp; Công nghệ, Đại học Vinh. Tôi thích làm web, đồ họa 3D nhẹ trên trình duyệt và cấu trúc dữ liệu C++.</p>
+            <p>Ngoài giờ học, tôi làm nội dung trên YouTube (kênh REKT) về các tựa game MOBA mobile.</p>
+          </div>
+        </div>
+      </article>
+      <article class="khoi o2">
+        <h3>Thông tin cá nhân</h3>
+        <table>
+          <tr><td>Họ tên</td><td>Nguyễn Trần Hải Nam</td></tr>
+          <tr><td>Trường</td><td>Đại học Vinh (K66)</td></tr>
+          <tr><td>Ngành</td><td>Công nghệ Thông tin</td></tr>
+          <tr><td>Nơi ở</td><td>TP. Vinh, Nghệ An</td></tr>
+        </table>
+      </article>
+    </section>
+
+    <!-- Kỹ năng: 4 khối một hàng -->
+    <h2 class="tieu-de" id="skills">Kỹ năng</h2>
+    <section class="hang">
+      <article class="khoi o4">
+        <h3>Lập trình Web</h3>
+        <span class="the">HTML5</span><span class="the">CSS3</span>
+        <span class="the">JavaScript</span><span class="the">Three.js</span>
+      </article>
+      <article class="khoi o4">
+        <h3>Lập trình</h3>
+        <span class="the">C / C++</span><span class="the">CTDL &amp; GT</span>
+        <span class="the">OOP</span>
+      </article>
+      <article class="khoi o4">
+        <h3>Công cụ</h3>
+        <span class="the">SQL Server</span><span class="the">Git / GitHub</span>
+        <span class="the">VS Code</span><span class="the">WordPress</span>
+      </article>
+      <article class="khoi o4">
+        <h3>Thiết kế</h3>
+        <span class="the">Figma</span><span class="the">Wireframe</span>
+        <span class="the">Godot (2D)</span><span class="the">Video Editing</span>
+      </article>
+    </section>
+
+    <!-- Dự án: 4 khối chia 2 hàng, mỗi hàng 2 khối -->
+    <h2 class="tieu-de" id="projects">Dự án</h2>
+    <section class="hang">
+      <article class="khoi o2 du-an">
+        <h3>Lamma - Web Music Player</h3>
+        <p>Ứng dụng phát nhạc offline có sóng nhạc Canvas và hiệu ứng hạt sao rơi.</p>
+        <p><span class="the">HTML5</span><span class="the">JavaScript</span><span class="the">Three.js</span></p>
+        <a href="#">Live Demo</a><a href="#">Source Code</a>
+      </article>
+      <article class="khoi o2 du-an">
+        <h3>3D Solar System</h3>
+        <p>Mô phỏng hệ Mặt Trời 3D trên trình duyệt, có quỹ đạo hành tinh và chế độ điều khiển phi thuyền.</p>
+        <p><span class="the">Three.js</span><span class="the">JavaScript</span><span class="the">WebGL</span></p>
+        <a href="#">Live Demo</a><a href="#">Source Code</a>
+      </article>
+      <article class="khoi o2 du-an">
+        <h3>Quiz App</h3>
+        <p>Ứng dụng trắc nghiệm ôn thi chạy offline, tự đếm ngược thời gian và tính kết quả.</p>
+        <p><span class="the">HTML</span><span class="the">CSS</span><span class="the">JavaScript</span></p>
+        <a href="#">Live Demo</a><a href="#">Source Code</a>
+      </article>
+      <article class="khoi o2 du-an">
+        <h3>Student Management</h3>
+        <p>Chương trình quản lý sinh viên bằng C++, dùng OOP, đọc/ghi file và sắp xếp dữ liệu.</p>
+        <p><span class="the">C++</span><span class="the">OOP</span><span class="the">File I/O</span></p>
+        <a href="#">Chi tiết</a><a href="#">GitHub</a>
+      </article>
+    </section>
+
+    <!-- Liên hệ: 2 khối -->
+    <h2 class="tieu-de" id="contact">Liên hệ</h2>
+    <section class="hang">
+      <article class="khoi o2">
+        <h3>Gửi lời nhắn</h3>
+        <form action="" method="get">
+          <input type="email" placeholder="Email của bạn" required>
+          <select>
+            <option>Hợp tác dự án</option>
+            <option>Hỏi về YouTube REKT</option>
+            <option>Khác</option>
+          </select>
+          <textarea rows="3" placeholder="Nội dung"></textarea>
+          <input type="submit" value="Gửi">
+        </form>
+      </article>
+      <article class="khoi o2">
+        <h3>Kết nối</h3>
+        <ul>
+          <li><a href="https://github.com">GitHub</a></li>
+          <li><a href="https://youtube.com">YouTube (REKT)</a></li>
+          <li><a href="mailto:email@example.com">Email</a></li>
+        </ul>
+      </article>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Nguyễn Trần Hải Nam - Sinh viên Đại học Vinh</p>
+  </footer>
+
+</body>
+</html>
